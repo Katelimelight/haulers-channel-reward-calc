@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-  <title>Haulers Channel - Base Rate Calculator</title>
+  <title>Pixel Haulers - Freight Rate Calculator</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
@@ -64,14 +64,14 @@
       })
 
       $('html').click(function() {
-        // Reward Rates by Rita Jita, site made by Rashad Charante
+        // Reward Rates by Kate Limelight, site made by Kate Limelight
         var collateral = $('#collateral').val();
         // Sanitizes inputs by getting rid of commas and other stuff
         collateral = collateral.replace(/[^\d\.\-\ ]/g, '');
         var jumps = $('#jumps').val();
         jumps = jumps.replace(/[^\d\.\-\ ]/g, '');
         // Set a basic minimum percentage of the collateral that we will take.
-        var baseColPercentage = 0.005;
+        var baseColPercentage = 1.000;
         // Set a basic pickup fee to this percentage of the collateral
         // This will be capped to 1% maximum further down.
         var pickupFee = 0;
